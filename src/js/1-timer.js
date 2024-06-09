@@ -43,7 +43,7 @@ const fp = flatpickr(refs.inputEl, {
     if (date.getTime() < Date.now()) {
       iziToast.error({
         title: 'Error',
-        titleColor: '#ffffff',
+        titleColor: '#fff',
         titleSize: 16,
         titleLineHeight: 1.5,
         message: 'Please choose a date in the future',
@@ -52,7 +52,9 @@ const fp = flatpickr(refs.inputEl, {
         messageColor: '#fff',
         backgroundColor: '#ef4040',
         position: 'topRight',
-        timeout: 15000,
+        timeout: 5000,
+        color: '#fff',
+        theme: 'dark',
       });
     } else {
       refs.startBtn.disabled = false;

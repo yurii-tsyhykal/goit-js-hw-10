@@ -21,3 +21,20 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.iziToast > .iziToast-body .iziToast-texts {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  margin-top: 0px;
+}
+
+/* .iziToast.fadeInUp {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+} */
+
+.iziToast-color-name {
+  color: #fff;
+}
