@@ -17,8 +17,9 @@ function onSubmitForm(e) {
   const delay = Number(refs.delayInput.value);
 
   const promise = new Promise((resolve, reject) => {
+    const isFulf = refs.inputFulf.checked;
     setTimeout(() => {
-      if (refs.inputFulf.checked) {
+      if (isFulf) {
         resolve(delay);
       } else {
         reject(delay);
@@ -57,4 +58,5 @@ function onSubmitForm(e) {
         theme: 'dark',
       })
     );
+  refs.formEl.reset();
 }
